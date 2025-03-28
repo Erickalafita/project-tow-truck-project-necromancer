@@ -1,0 +1,255 @@
+.requestsMain {
+  padding: 2rem 0;
+}
+
+.requestsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.newRequestButton {
+  background-color: #4bb0ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newRequestButton:hover {
+  background-color: #3a9fe9;
+}
+
+.requestsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.requestCard {
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #444;
+}
+
+.requestCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.requestHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.75rem;
+}
+
+.requestHeader h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.status {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+}
+
+.statusPending {
+  background-color: #ffeaa7;
+  color: #b7791f;
+}
+
+.statusAccepted {
+  background-color: #c4e6ff;
+  color: #2b6cb0;
+}
+
+.statusCompleted {
+  background-color: #c6f6d5;
+  color: #276749;
+}
+
+.statusCancelled {
+  background-color: #fed7d7;
+  color: #c53030;
+}
+
+.requestDescription {
+  margin-bottom: 1.5rem;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.requestMeta {
+  font-size: 0.8rem;
+  color: #aaa;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.loading, .emptyState {
+  text-align: center;
+  padding: 3rem 0;
+  color: #ddd;
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.emptyState p {
+  margin: 0.5rem 0;
+}
+
+.error {
+  background-color: #3a1a1a;
+  color: #ff6347;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  border: 1px solid #ff6347;
+  text-align: center;
+}
+
+.newRequestForm {
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #444;
+}
+
+.newRequestForm h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #4bb0ff;
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.75rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #444;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #4bb0ff;
+  box-shadow: 0 0 0 2px rgba(75, 176, 255, 0.25);
+}
+
+.formActions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.submitButton {
+  background-color: #4bb0ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+}
+
+.submitButton:hover {
+  background-color: #3a9fe9;
+}
+
+.cancelButton {
+  background-color: #666;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancelButton:hover {
+  background-color: #ff6347;
+}
+
+.cancelRequestButton {
+  background-color: transparent;
+  color: #ff6347;
+  border: 1px solid #ff6347;
+  border-radius: 4px;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancelRequestButton:hover {
+  background-color: #ff6347;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .requestsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .requestsList {
+    grid-template-columns: 1fr;
+  }
+} 
