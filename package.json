@@ -1,0 +1,29 @@
+{
+  "name": "project-necromancer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "backend:dev": "cd backend && nodemon src/server.ts",
+    "frontend:dev": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/google.maps": "^3.58.1",
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "next": "^15.2.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "description": ""
+}
